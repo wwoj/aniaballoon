@@ -17,11 +17,11 @@ import HeaderMain from './Components/header';
 import Footer from './Components/footer';
 import { useTranslation } from 'react-i18next';
 
-const options = [
-  {label:"English",value:'us'},
-  {label:"Polish",value:'pl'}
+// const options = [
+//   {label:"English",value:'us'},
+//   {label:"Polish",value:'pl'}
 
-]
+// ]
 
 function App() {
   const {t,i18n} = useTranslation();
