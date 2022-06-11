@@ -1,32 +1,58 @@
-import React, {useState} from 'react';
+import React, {useState,useEffect} from 'react';
 import PictureCard from '../Components/pictureCard';
-
-
-import Ballons from '../Pictures/PictureBalloons';
-
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCircleArrowLeft,faCircleArrowRight,faXmark } from '@fortawesome/free-solid-svg-icons'
+import Loader from '../Components/loader';
+import Walls,{GetPictures} from '../Pictures/PictureBalloons';
+
+
 
 function GalleryWalls() {
   const [showGalery, setShowGalery] = useState(false);
   const [picId, setPictureId] = useState(0);
-
-
-
-  const animalBallons = Ballons.map((x, i) => {
-    return (
-      <PictureCard
-        picture={x.obj}
-        alt={x.title}
-        id={i}
-        setShowGalery={setShowGalery}
-        setPictureId={setPictureId}
-      />
-    );
+  const [loading, setLoading] = useState(false);
+  const handleClickOutside = (event) => {
+   switch(event.keyCode)
+   {
+    case 37:
+      if (picId <= 0) {
+        setPictureId(Walls.length - 1);
+      } else {
+        setPictureId(picId - 1);
+      }
+      break;
+      case 39:
+        if (picId <= 0) {
+          setPictureId(Walls.length - 1);
+        } else {
+          setPictureId(picId - 1);
+        }
+        break;
+   }
+  };
+  useEffect(() => {
+    document.addEventListener("keydown", handleClickOutside, true);
+    return () => {
+      document.removeEventListener("keydown", handleClickOutside, true);
+    };
   });
+  useEffect(() => {
+    setLoading(true);
+    GetPictures().then(event=>{
+    setLoading(false);
+    })
+  },[]);
+  if (loading)
+  { return (
+    <div className="galery-page page-conatiner-box">
+     <Loader/>
+    </div>
+  );
+    
+  }
   return (
-    <div className="galery-page">
-  
+    <div className="galery-page page-conatiner-box">
+      
       <div
         className="gallery-full-view "
         style={{ display: showGalery ? "" : "none" }}
@@ -42,7 +68,7 @@ function GalleryWalls() {
         <div className='gallery-view-button-nav'
           onClick={() => {
             if (picId <= 0) {
-              setPictureId(Ballons.length - 1);
+              setPictureId(Walls.length - 1);
             } else {
               setPictureId(picId - 1);
             }
@@ -51,11 +77,11 @@ function GalleryWalls() {
           <FontAwesomeIcon icon={faCircleArrowLeft} size="3x" />
         </div>
         <div className="galery-full-view-container">
-          <img src={Ballons[picId].obj} alt={Ballons[picId].title} />
+          <img src={Walls[picId].obj} alt={Walls[picId].title} />
         </div>
         <div className='gallery-view-button-nav'
           onClick={() => {
-            if (picId === Ballons.length - 1) {
+            if (picId === Walls.length - 1) {
               setPictureId(0);
             } else {
               setPictureId(picId + 1);
@@ -66,8 +92,19 @@ function GalleryWalls() {
         </div>
       </div>
       
-      <div className="galery-container">{animalBallons}</div>
-            
+      <div className="galery-container">
+        {Walls.map((x, i) => (
+          <PictureCard
+          key={"animals-" + i}
+          picture={x.obj}
+          alt={x.title}
+          id={i}
+          setShowGalery={setShowGalery}
+          setPictureId={setPictureId}
+        />
+        ))}
+      
+        </div>
     </div>
   );
 }

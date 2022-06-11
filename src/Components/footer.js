@@ -9,7 +9,7 @@ import "../Styles/footer.scss";
 
 const Footer = (props) => {
     return (
-        <footer className="box two good">
+        <footer className="box two good footer-container">
             <ul className="inner-footer">
               
                 <li>

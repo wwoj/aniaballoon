@@ -48,5 +48,13 @@ const exportArray = [{obj:Ballon_1,title:"Balloon_1"},
 // {obj:Ballon_23,title:"Balloon_23"},
 // {obj:Ballon_24,title:"Balloon_24"},]
 ]
+export function GetPictures() {
+  const promise = new Promise((resolve, rejected) => {
+    setTimeout(() => {
+      resolve(exportArray);
+    }, 3000);
+  });
 
+  return promise;
+}
 export default exportArray;

@@ -34,6 +34,17 @@ const header =(props)=>{
               {props.t("PageWalls")}
             </NavLink>
           </li>
+          
+          <li className="nav-button">
+            <NavLink className="" end to="/decorations">
+              {props.t("PageDecorations")}
+            </NavLink>
+          </li>
+          <li className="nav-button">
+            <NavLink className="" end to="/events">
+              {props.t("PageEvents")}
+            </NavLink>
+          </li>
           <li className="nav-button">
             <NavLink className="" end to="/contact">
               {props.t("PageContact")}

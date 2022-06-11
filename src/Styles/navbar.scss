@@ -11,11 +11,20 @@
         font-size: 1.5rem;
     }
 }
+@media only screen and (max-width: 1050px) {
+    .navbar-container li{
+        font-size: 1.2rem;
 
+    }
+}
 @media only screen and (max-width: 950px) {
     .navbar-container li{
         font-size: 1rem;
 
+    }
+    .navbar-list a .logo-size{
+        width: 200px ;
+        // background-color: red;
     }
   }
   @media only screen and (max-width: 400px) {
@@ -29,7 +38,7 @@
     align-items: center;
     list-style: none;
     li{
-        padding: 5px 25px 5px 25px;
+        padding: 5px 10px 5px 10px;
         text-decoration: none;
 
     }
@@ -54,7 +63,7 @@ select::-ms-expand {
 }
 .navbar-list .nav-button a,.navbar-list  select {
     text-decoration: none;
-
+    background-color: none;
 
     color: #a18aa8;
     border: none;
@@ -91,4 +100,7 @@ select:focus, select:active{
 }
 .navbar-small-header{
     padding: 10px;
+}
+header{
+    background: linear-gradient(to top,rgb(255,255,255),rgba(255,255,255,0)), linear-gradient(to right,#ffa012,white);
 }

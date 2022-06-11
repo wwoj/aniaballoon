@@ -63,6 +63,16 @@ const NavbarSmall =(props)=>{
               </NavLink>
             </li>
             <li className="nav-button" >
+              <NavLink className="" end to="/decorations" onClick={switchMenuVisibility}>
+                {props.t("PageDecorations")}
+              </NavLink>
+            </li>
+            <li className="nav-button" >
+              <NavLink className="" end to="/events" onClick={switchMenuVisibility}>
+                {props.t("PageEvents")}
+              </NavLink>
+            </li>
+            <li className="nav-button" >
               <NavLink className="" end to="/contact" onClick={switchMenuVisibility}>
                 {props.t("PageContact")}
               </NavLink>

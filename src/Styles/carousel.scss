@@ -1,6 +1,7 @@
-.caorusel-container{
-    height: 400px;
-}
+// .caorusel-container{
+//     height: 400px;
+// }
+
 .carousel-inner{
     height: 100%;
 }
@@ -20,4 +21,21 @@
     span{
         margin: 0;
     }
+}
+.test-carousel{
+    // background-image: url("https://loremflickr.com/320/240");
+ background-repeat: no-repeat;
+ background-attachment: fixed;
+ background-position: center center;
+ background-size: cover;
+}
+@media only screen and (min-width: 1200px)  {
+    .carousel-container{
+    
+  img{
+    // max-height: 480px;
+
+  }
+
+}
 }

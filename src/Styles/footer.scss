@@ -1,7 +1,12 @@
 @import "variables.scss";
 
 
-
+.footer-container{
+    position: relative;
+    bottom: 0;
+    margin: 0;
+    margin-top: 2rem;
+}
 footer {
     margin-top: 20px;
     display: block;
@@ -53,7 +58,7 @@ ul {
 }
 
 .box {
-    margin-bottom: 10px;
+    // margin-bottom: 10px;
     background: linear-gradient(135deg, $color1, $color2, $color3);
 }
 

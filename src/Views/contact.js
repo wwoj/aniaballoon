@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {faPhone,faEnvelope} from '@fortawesome/free-solid-svg-icons';
 const Contact = (props)=>{
   return (
-    <div style={{ height: "80vh" }} className="ds-flex-c ">
+    <div  className="ds-flex-c page-conatiner-box">
       <div className="form-sides contact-container border-shadow-1">
         <h2 className='contact-h2'>{props.t("contactHeader")}</h2>
         <p>

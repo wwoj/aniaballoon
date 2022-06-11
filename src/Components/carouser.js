@@ -12,8 +12,8 @@ function CarouselTop(props){
 
     return (
       <div>
-        <Carousel variant="dark" className="caorusel-container">
-          <Carousel.Item interval={4000}>
+        {/* <Carousel variant="dark" className="caorusel-container">
+          <Carousel.Item interval={400000}>
             <div className="ds-flex-c align-center" style={{ height: "100%" }}>
               <Media queries={{ small: { maxWidth: 800 } }}>
                 {(matches) =>
@@ -36,7 +36,7 @@ function CarouselTop(props){
               </Media>
             </div>
           </Carousel.Item>
-          <Carousel.Item interval={4000} className="carousel-item-child">
+          <Carousel.Item interval={400000} className="carousel-item-child">
             <div className="ds-flex-c align-center" style={{ height: "100%" }}>
             <Media queries={{ small: { maxWidth: 800 } }}>
                 {(matches) =>
@@ -59,7 +59,7 @@ function CarouselTop(props){
               </Media>
             </div>
           </Carousel.Item>
-        </Carousel>
+        </Carousel> */}
       </div>
     );
 }

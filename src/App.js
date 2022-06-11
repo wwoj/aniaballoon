@@ -8,6 +8,9 @@ import { HashRouter,Route, Routes } from 'react-router-dom';
 import Home from './Views/home';
 import GalleryAnimals from './Views/galleryAnimals';
 import GalleryPhotoBackdrops from './Views/galleryPhotoBackdrops'
+import GalleryDecorations from './Views/galleryDecorations'
+import GalleryEvents from './Views/galleryEvents'
+
 import Contact from './Views/contact';
 
 
@@ -41,11 +44,21 @@ function App() {
             path="/photobackdrops"
             element={<GalleryPhotoBackdrops t={t} />}
           />
+          <Route
+            exact
+            path="/decorations"
+            element={<GalleryDecorations t={t} />}
+          />
+          <Route
+            exact
+            path="/events"
+            element={<GalleryEvents t={t} />}
+          />
           <Route exact path="/contact" element={<Contact t={t} />} />
         </Routes>
       </HashRouter>
       <div className="footer-cover"></div>
-      <section><Footer t={t} /></section>
+      <Footer t={t} />
     </div>
   );
 }
