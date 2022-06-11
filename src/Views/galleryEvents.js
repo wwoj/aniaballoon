@@ -3,11 +3,11 @@ import PictureCard from '../Components/pictureCard';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCircleArrowLeft,faCircleArrowRight,faXmark } from '@fortawesome/free-solid-svg-icons'
 
-import Walls,{GetPictures} from '../Pictures/PictureBalloons';
+import Walls,{GetPictures} from '../Pictures/PictureEvents';
 
 
 
-function GalleryWalls() {
+function GallerEvents() {
   const [showGalery, setShowGalery] = useState(false);
   const [picId, setPictureId] = useState(0);
   const [loading, setLoading] = useState(false);
@@ -48,7 +48,7 @@ function GalleryWalls() {
   if (loading)
   { return (
     <div className="galery-page page-conatiner-box">
-     <div className="circle"></div>
+      <div className="circle"></div>
     </div>
   );
     
@@ -98,7 +98,7 @@ function GalleryWalls() {
       <div className="galery-container">
         {Walls.map((x, i) => (
           <PictureCard
-          key={"animals-" + i}
+          key={"events-" + i}
           picture={x.obj}
           alt={x.title}
           id={i}
@@ -111,4 +111,4 @@ function GalleryWalls() {
     </div>
   );
 }
-export default GalleryWalls;
+export default GallerEvents;

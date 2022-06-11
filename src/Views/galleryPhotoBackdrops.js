@@ -2,7 +2,6 @@ import React, {useState,useEffect} from 'react';
 import PictureCard from '../Components/pictureCard';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCircleArrowLeft,faCircleArrowRight,faXmark } from '@fortawesome/free-solid-svg-icons'
-// import Loader from '../Components/loader';
 import Walls,{GetPictures} from '../Pictures/PictureWalls';
 
 
@@ -28,6 +27,9 @@ function GalleryWalls() {
           setPictureId(picId - 1);
         }
         break;
+      default:
+          setPictureId(0)
+          break;
    }
   };
   useEffect(() => {
@@ -45,7 +47,7 @@ function GalleryWalls() {
   if (loading)
   { return (
     <div className="galery-page page-conatiner-box">
-     {/* <Loader/> */}
+     <div className="circle"></div>
     </div>
   );
     

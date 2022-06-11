@@ -8,10 +8,10 @@ import Wall_7 from './Walls/Wall_7.png';
 import Wall_8 from './Walls/Wall_8.png';
 import Wall_9 from './Walls/Wall_9.png';
 import Wall_10 from './Walls/Wall_10.png';
-import Wall_11 from './Walls/Wall_11.png';
-import Wall_12 from './Walls/Wall_12.png';
-import Wall_13 from './Walls/Wall_13.png';
-import Wall_14 from './Walls/Wall_14.png';
+import Wall_11 from './Walls/Wall_11.jpg';
+import Wall_12 from './Walls/Wall_12.jpg';
+import Wall_13 from './Walls/Wall_13.jpg';
+import Wall_14 from './Walls/Wall_14.jpg';
 
 
 
@@ -36,7 +36,7 @@ export function GetPictures() {
     const promise = new Promise((resolve, rejected) => {
       setTimeout(() => {
         resolve(exportArray);
-      }, 3000);
+      }, 3000000);
     });
   
     return promise;
