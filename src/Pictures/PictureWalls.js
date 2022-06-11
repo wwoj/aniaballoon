@@ -36,7 +36,7 @@ export function GetPictures() {
     const promise = new Promise((resolve, rejected) => {
       setTimeout(() => {
         resolve(exportArray);
-      }, 3000000);
+      }, 3000);
     });
   
     return promise;
