@@ -22,14 +22,16 @@ function GalleryWalls() {
       }
       break;
       case 39:
-        if (picId <= 0) {
-          setPictureId(Walls.length - 1);
+        if (picId >=Walls.length-1) {
+          setPictureId(0);
         } else {
-          setPictureId(picId - 1);
+          setPictureId(picId + 1);
         }
         break;
-        default:
-          setPictureId(0)
+        case 27:
+        setShowGalery(false);
+        break;
+      default:
           break;
    }
   };

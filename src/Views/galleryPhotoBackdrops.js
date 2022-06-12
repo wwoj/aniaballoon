@@ -11,6 +11,8 @@ function GalleryWalls() {
   const [picId, setPictureId] = useState(0);
   const [loading, setLoading] = useState(false);
   const handleClickOutside = (event) => {
+    console.log(event.keyCode)
+
    switch(event.keyCode)
    {
     case 37:
@@ -21,14 +23,16 @@ function GalleryWalls() {
       }
       break;
       case 39:
-        if (picId <= 0) {
-          setPictureId(Walls.length - 1);
+        if (picId >=Walls.length-1) {
+          setPictureId(0);
         } else {
-          setPictureId(picId - 1);
+          setPictureId(picId + 1);
         }
         break;
+      case 27:
+        setShowGalery(false);
+        break;
       default:
-          setPictureId(0)
           break;
    }
   };
