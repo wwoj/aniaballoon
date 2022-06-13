@@ -11,7 +11,7 @@ function GalleryWalls() {
   const [picId, setPictureId] = useState(0);
   const [loading, setLoading] = useState(false);
   const [touchStart, setTouchStart] = useState(0);
-  const [touchEnd, setTouchEnd] = useState(0);
+  // const [touchEnd, setTouchEnd] = useState(0);
 
 
   const handleClickOutside = (event) => {
@@ -92,7 +92,7 @@ function GalleryWalls() {
           setTouchStart(clientX);
           console.log("Touch start",clientX)}}
         onTouchEnd={(e)=>{
-          setTouchEnd(e.changedTouches[0].clientX);
+          // setTouchEnd(e.changedTouches[0].clientX);
           var touchEndValue = e.changedTouches[0].clientX;
           console.log("Touch end", e.changedTouches[0].clientX);
           if(touchStart-touchEndValue<0)
