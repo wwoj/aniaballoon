@@ -15,7 +15,7 @@ function GalleryWalls() {
 
 
   const handleClickOutside = (event) => {
-    console.log(event.keyCode)
+    // console.log(event.keyCode)
 
    switch(event.keyCode)
    {
@@ -90,11 +90,12 @@ function GalleryWalls() {
         <div className="galery-full-view-container"
         onTouchStart={(e)=>{ var clientX = e.touches[0].clientX;
           setTouchStart(clientX);
-          console.log("Touch start",clientX)}}
+          // console.log("Touch start",clientX
+        }}
         onTouchEnd={(e)=>{
           // setTouchEnd(e.changedTouches[0].clientX);
           var touchEndValue = e.changedTouches[0].clientX;
-          console.log("Touch end", e.changedTouches[0].clientX);
+          // console.log("Touch end", e.changedTouches[0].clientX);
           if(touchStart-touchEndValue<0)
           {
             if (picId <= 0) {
