@@ -13,8 +13,10 @@ function GalleryWalls() {
   const [touchStart, setTouchStart] = useState(0);
   const [touchEnd, setTouchEnd] = useState(0);
 
-  var touchStartValue;
+
   const handleClickOutside = (event) => {
+    console.log(event.keyCode)
+
    switch(event.keyCode)
    {
     case 37:
@@ -45,12 +47,11 @@ function GalleryWalls() {
     };
   });
   useEffect(() => {
-    document.addEventListener("keydown", handleClickOutside, true);
-    return () => {
-      document.removeEventListener("keydown", handleClickOutside, true);
-    };
-  },[]);  
-
+    setLoading(true);
+    GetPictures().then(event=>{
+    setLoading(false);
+    })
+  },[]);
   if (loading)
   { return (
     <div className="galery-page page-conatiner-box">
@@ -88,13 +89,12 @@ function GalleryWalls() {
         </div>
         <div className="galery-full-view-container"
         onTouchStart={(e)=>{ var clientX = e.touches[0].clientX;
-          touchStartValue= clientX;
           setTouchStart(clientX);
-        }}
+          console.log("Touch start",clientX)}}
         onTouchEnd={(e)=>{
-          let touchEndValue = e.changedTouches[0].clientX;
-          setTouchEnd(touchEndValue);
-          if(touchStart-touchEndValue<0)
+          setTouchEnd(e.changedTouches[0].clientX);
+          console.log("Touch end", e.changedTouches[0].clientX);
+          if(touchStart-touchEnd<0)
           {
             if (picId <= 0) {
               setPictureId(Walls.length - 1);
