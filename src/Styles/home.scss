@@ -35,9 +35,14 @@
     background: #ededed;
     background: linear-gradient(136deg, #fbf2b58c, transparent);
     width: 80%;
-    font-size: 1.5rem;
-    
-  
+    font-size: 1.5rem;  
+}
+@media only screen and (max-width: 800px)  {
+    .home-text{
+    font-size: 0.8rem;
+    font-weight: 600;  
+
+    }
 }
 .home-text-pos{
     position: absolute;
