@@ -10,6 +10,10 @@ function GalleryWalls() {
   const [showGalery, setShowGalery] = useState(false);
   const [picId, setPictureId] = useState(0);
   const [loading, setLoading] = useState(false);
+  const [touchStart, setTouchStart] = useState(0);
+  const [touchEnd, setTouchEnd] = useState(0);
+
+
   const handleClickOutside = (event) => {
     console.log(event.keyCode)
 
@@ -79,10 +83,39 @@ function GalleryWalls() {
               setPictureId(picId - 1);
             }
           }}
+          
         >
           <FontAwesomeIcon icon={faCircleArrowLeft} size="3x" />
         </div>
-        <div className="galery-full-view-container">
+        <div className="galery-full-view-container"
+        onTouchStart={(e)=>{ var clientX = e.touches[0].clientX;
+          setTouchStart(clientX);
+          console.log("Touch start",clientX)}}
+        onTouchEnd={(e)=>{
+          setTouchEnd(e.changedTouches[0].clientX);
+          console.log("Touch end", e.changedTouches[0].clientX);
+          if(touchStart-touchEnd<0)
+          {
+            if (picId <= 0) {
+              setPictureId(Walls.length - 1);
+            } else {
+              setPictureId(picId - 1);
+            }
+          }
+          else
+          {
+            if (picId >=Walls.length-1) {
+              setPictureId(0);
+            } else {
+              setPictureId(picId + 1);
+            }
+          }
+          // setPictureId(picId+1);
+        }
+        
+        }
+          
+        >
           <img src={Walls[picId].obj} alt={Walls[picId].title} />
         </div>
         <div className='gallery-view-button-nav'

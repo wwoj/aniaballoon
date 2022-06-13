@@ -103,4 +103,11 @@ select:focus, select:active{
 }
 header{
     background: linear-gradient(to top,rgb(255,255,255),rgba(255,255,255,0)), linear-gradient(to right,#ffa012,white);
+    margin-bottom: 2rem;
+}
+@media only screen and (max-width: 600px)  {
+    header{
+        margin-bottom: 0.5rem;
+    }
+
 }

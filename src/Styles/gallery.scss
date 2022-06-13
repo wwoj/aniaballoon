@@ -57,6 +57,16 @@
         max-height: 100%;
     }
 }
+@media only screen and (max-width: 800px)  {
+    .galery-full-view-container{
+        max-width: 100%;
+        width: 100%;
+        height: 100%;
+    }
+    .gallery-view-button-nav:not(:first-child){
+        display: none;
+    }
+}
 .card-picture-container{
     &:hover{
         cursor: pointer;

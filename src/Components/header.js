@@ -6,7 +6,7 @@ import NavbarSmall from './navbarSmall';
 
 const Header =(props)=>{
     return (
-      <header style={{marginBottom:"2rem"}}>
+      <header  className="header-container">
         <Media queries={{ small: { maxWidth: 800 } }}>
           {(matches) =>
             matches.small ? (
