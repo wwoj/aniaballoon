@@ -93,8 +93,9 @@ function GalleryWalls() {
           console.log("Touch start",clientX)}}
         onTouchEnd={(e)=>{
           setTouchEnd(e.changedTouches[0].clientX);
+          var touchEndValue = e.changedTouches[0].clientX;
           console.log("Touch end", e.changedTouches[0].clientX);
-          if(touchStart-touchEnd<0)
+          if(touchStart-touchEndValue<0)
           {
             if (picId <= 0) {
               setPictureId(Walls.length - 1);
