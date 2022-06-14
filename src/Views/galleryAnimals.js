@@ -90,7 +90,7 @@ function GalleryWalls() {
         <div className="galery-full-view-container"
         onTouchStart={(e)=>{ var clientX = e.touches[0].clientX;
           setTouchStart(clientX);
-          // console.log("Touch start",clientX
+          // console.log("Touch start",clientX)
         }}
         onTouchEnd={(e)=>{
           // setTouchEnd(e.changedTouches[0].clientX);
