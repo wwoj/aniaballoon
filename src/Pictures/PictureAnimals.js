@@ -1,5 +1,5 @@
-import Deco_1 from './Decorations/Deco_1.jpg';
-import Deco_2 from './Decorations/Deco_2.jpg';
+import Deco_1 from './Balloons/bal_1.png';
+import Deco_2 from './Balloons/bal_2.png';
 import Deco_3 from './Decorations/Deco_3.jpg';
 import Deco_4 from './Decorations/Deco_4.jpg';
 import Deco_5 from './Decorations/Deco_5.jpg';
