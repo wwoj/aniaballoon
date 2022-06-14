@@ -20,8 +20,6 @@ import Ballon_19 from './Balloons/bal_19.png';
 import Ballon_20 from './Balloons/bal_20.png';
 import Ballon_21 from './Balloons/bal_21.png';
 import Ballon_22 from './Balloons/bal_22.png';
-// import Ballon_23 from './Balloons/bal_23.png';
-// import Ballon_24 from './Balloons/bal_24.png';
 
 const exportArray = [{obj:Ballon_1,title:"Balloon_1"},
 {obj:Ballon_2,title:"Balloon_2"},
@@ -44,9 +42,7 @@ const exportArray = [{obj:Ballon_1,title:"Balloon_1"},
 {obj:Ballon_19,title:"Balloon_19"},
 {obj:Ballon_20,title:"Balloon_20"},
 {obj:Ballon_21,title:"Balloon_21"},
-{obj:Ballon_22,title:"Balloon_22"},
-// {obj:Ballon_23,title:"Balloon_23"},
-// {obj:Ballon_24,title:"Balloon_24"},]
+{obj:Ballon_22,title:"Balloon_22"}
 ]
 export function GetPictures() {
   const promise = new Promise((resolve, rejected) => {
