@@ -2,7 +2,7 @@ import React, {useState,useEffect} from 'react';
 import PictureCard from '../Components/pictureCard';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCircleArrowLeft,faCircleArrowRight,faXmark } from '@fortawesome/free-solid-svg-icons'
-import Walls,{GetPictures} from '../Pictures/PictureEvents';
+import Walls,{GetPictures} from '../Pictures/PictureBalloons';
 
 
 
@@ -90,7 +90,7 @@ function GalleryWalls() {
         <div className="galery-full-view-container"
         onTouchStart={(e)=>{ var clientX = e.touches[0].clientX;
           setTouchStart(clientX);
-          // console.log("Touch start",clientX)
+          // console.log("Touch start",clientX
         }}
         onTouchEnd={(e)=>{
           // setTouchEnd(e.changedTouches[0].clientX);
