@@ -2,7 +2,7 @@ import React, {useState,useEffect} from 'react';
 import PictureCard from '../Components/pictureCard';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCircleArrowLeft,faCircleArrowRight,faXmark } from '@fortawesome/free-solid-svg-icons'
-import Walls,{GetPictures} from '../Pictures/PictureEvents';
+import Walls,{GetPictures} from '../Pictures/PictureBalloons';
 
 
 
