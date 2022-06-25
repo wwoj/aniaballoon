@@ -20,6 +20,17 @@ import Deco_19 from './Balloons/bal_19.png';
 import Deco_20 from './Balloons/bal_20.png';
 import Deco_21 from './Balloons/bal_21.png';
 import Deco_22 from './Balloons/bal_22.png';
+// import Deco_23 from './Balloons/bal_23.png';
+import Deco_24 from './Balloons/bal_24.png';
+import Deco_25 from './Balloons/bal_25.png';
+import Deco_26 from './Balloons/bal_26.png';
+import Deco_27 from './Balloons/bal_27.png';
+import Deco_28 from './Balloons/bal_28.png';
+import Deco_29 from './Balloons/bal_29.png';
+import Deco_30 from './Balloons/bal_30.png';
+import Deco_31 from './Balloons/bal_31.png';
+import Deco_32 from './Balloons/bal_32.png';
+
 
 
 // import Ballon_23 from './Decorations/bal_23.png';
@@ -47,6 +58,17 @@ const exportArray = [{obj:Deco_1,title:"Decoration_1"},
 {obj:Deco_20,title:"Decoration_20"},
 {obj:Deco_21,title:"Decoration_21"},
 {obj:Deco_22,title:"Decoration_22"},
+// {obj:Deco_23,title:"Decoration_23"},
+{obj:Deco_24,title:"Decoration_24"},
+{obj:Deco_25,title:"Decoration_25"},
+{obj:Deco_26,title:"Decoration_26"},
+{obj:Deco_27,title:"Decoration_27"},
+{obj:Deco_28,title:"Decoration_28"},
+{obj:Deco_29,title:"Decoration_29"},
+{obj:Deco_30,title:"Decoration_30"},
+{obj:Deco_31,title:"Decoration_31"},
+{obj:Deco_32,title:"Decoration_32"},
+
 
 ]
 export function GetPictures() {

@@ -29,6 +29,9 @@ import Event_28 from './Events/Event_028.jpg';
 import Event_29 from './Events/Event_029.jpg';
 import Event_30 from './Events/Event_030.jpg';
 import Event_31 from './Events/Event_031.jpg';
+import Event_32 from './Events/Event_032.jpg';
+import Event_33 from './Events/Event_033.jpg';
+
 
 
 
@@ -66,8 +69,8 @@ const exportArray = [
     {obj:Event_29,title:"Event_29"},
     {obj:Event_30,title:"Event_30"},
     {obj:Event_31,title:"Event_31"},
-
-
+    {obj:Event_32,title:"Event_32"},
+    {obj:Event_33,title:"Event_33"}
 ];
 export function GetPictures() {
     const promise = new Promise((resolve, rejected) => {

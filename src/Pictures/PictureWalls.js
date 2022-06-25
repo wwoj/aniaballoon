@@ -12,6 +12,11 @@ import Wall_11 from './Walls/Wall_11.jpg';
 import Wall_12 from './Walls/Wall_12.jpg';
 import Wall_13 from './Walls/Wall_13.jpg';
 import Wall_14 from './Walls/Wall_14.jpg';
+import Wall_15 from './Walls/Wall_15.jpg';
+import Wall_16 from './Walls/Wall_16.jpg';
+import Wall_17 from './Walls/Wall_17.jpg';
+import Wall_18 from './Walls/Wall_18.jpg';
+
 
 
 
@@ -30,6 +35,10 @@ const exportArray = [
     {obj:Wall_12,title:"Wall_12"},
     {obj:Wall_13,title:"Wall_13"},
     {obj:Wall_14,title:"Wall_14"},
+    {obj:Wall_15,title:"Wall_15"},
+    {obj:Wall_16,title:"Wall_16"},
+    {obj:Wall_17,title:"Wall_17"},
+    {obj:Wall_18,title:"Wall_18"},
 
 ];
 export function GetPictures() {
