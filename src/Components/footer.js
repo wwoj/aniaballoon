@@ -30,7 +30,7 @@ const Footer = (props) => {
                 </li>
             </ul>
             <div className='ds-flex-end align-center footer-creator'>
-                <span>Created by wojcik.wojciechp@gmail.com</span>
+                <span>Created by: wojcik.wojciechp@gmail.com</span>
             </div>
         </footer>
 
