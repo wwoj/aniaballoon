@@ -33,6 +33,7 @@ import Deco_32 from "./Balloons/bal_32.png";
 import Deco_33 from "./Balloons/bal_33.png";
 import Deco_34 from "./Balloons/bal_34.png";
 import Deco_35 from "./Balloons/bal_35.png";
+import Deco_36 from "./Balloons/bal_36.png";
 
 // import Ballon_23 from './Decorations/bal_23.png';
 // import Ballon_24 from './Decorations/bal_24.png';
@@ -73,6 +74,7 @@ const exportArray = [
   { obj: Deco_33, title: "Decoration_33" },
   { obj: Deco_34, title: "Decoration_34" },
   { obj: Deco_35, title: "Decoration_35" },
+  { obj: Deco_36, title: "Decoration_36" },
 ];
 export function GetPictures() {
   const promise = new Promise((resolve, rejected) => {

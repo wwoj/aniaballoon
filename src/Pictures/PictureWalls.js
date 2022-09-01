@@ -16,6 +16,9 @@ import Wall_16 from "./Walls/Wall_16.jpg";
 import Wall_17 from "./Walls/Wall_17.jpg";
 import Wall_18 from "./Walls/Wall_18.jpg";
 import Wall_19 from "./Walls/Wall_19.jpg";
+import Wall_20 from "./Walls/Wall_20.jpg";
+import Wall_21 from "./Walls/Wall_21.jpg";
+import Wall_22 from "./Walls/Wall_22.jpg";
 
 const exportArray = [
   { obj: Wall_1, title: "Wall_1" },
@@ -37,6 +40,9 @@ const exportArray = [
   { obj: Wall_17, title: "Wall_17" },
   { obj: Wall_18, title: "Wall_18" },
   { obj: Wall_19, title: "Wall_19" },
+  { obj: Wall_20, title: "Wall_20" },
+  { obj: Wall_21, title: "Wall_21" },
+  { obj: Wall_22, title: "Wall_22" },
 ];
 export function GetPictures() {
   const promise = new Promise((resolve, rejected) => {
