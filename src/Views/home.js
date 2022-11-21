@@ -2,14 +2,14 @@ import React from 'react';
 
 import GalleryButton from '../Components/galleryButton';
 
-import Carousel2 from '../Components/carousel1';
+import CarouselTop from '../Components/carouselMain';
 
 
 const Home = (props) => {
   return (
     <div className='page-conatiner-box'>
       <div className="carousel-container">
-        <Carousel2 />
+        <CarouselTop />
         
       </div>
       <section className="home-container">

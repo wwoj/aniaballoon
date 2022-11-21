@@ -43,6 +43,10 @@ import Event_42 from "./Events/Event_042.jpg";
 import Event_43 from "./Events/Event_043.jpg";
 import Event_44 from "./Events/Event_044.jpg";
 import Event_45 from "./Events/Event_045.jpg";
+import Event_46 from "./Events/Event_046.jpg";
+import Event_47 from "./Events/Event_047.jpg";
+import Event_48 from "./Events/Event_048.jpg";
+
 
 const exportArray = [
   { obj: Event_1, title: "Event_1" },
@@ -90,12 +94,16 @@ const exportArray = [
   { obj: Event_43, title: "Event_43" },
   { obj: Event_44, title: "Event_44" },
   { obj: Event_45, title: "Event_45" },
+  { obj: Event_46, title: "Event_46" },
+  { obj: Event_47, title: "Event_47" },
+  { obj: Event_48, title: "Event_48" },
+
 ];
 export function GetPictures() {
   const promise = new Promise((resolve, rejected) => {
     setTimeout(() => {
       resolve(exportArray);
-    }, 3000);
+    }, 2000);
   });
 
   return promise;

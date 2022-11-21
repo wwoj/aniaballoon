@@ -34,6 +34,23 @@ import Deco_33 from "./Balloons/bal_33.png";
 import Deco_34 from "./Balloons/bal_34.png";
 import Deco_35 from "./Balloons/bal_35.png";
 import Deco_36 from "./Balloons/bal_36.png";
+import Deco_37 from "./Balloons/bal_37.jpg";
+import Deco_38 from "./Balloons/bal_38.jpg";
+import Deco_39 from "./Balloons/bal_39.jpg";
+import Deco_40 from "./Balloons/bal_40.jpg";
+import Deco_41 from "./Balloons/bal_41.jpg";
+import Deco_42 from "./Balloons/bal_42.jpg";
+import Deco_43 from "./Balloons/bal_43.jpg";
+import Deco_44 from "./Balloons/bal_44.jpg";
+import Deco_45 from "./Balloons/bal_45.jpg";
+import Deco_46 from "./Balloons/bal_46.jpg";
+import Deco_47 from "./Balloons/bal_47.jpg";
+import Deco_48 from "./Balloons/bal_48.jpg";
+import Deco_49 from "./Balloons/bal_49.jpg";
+import Deco_50 from "./Balloons/bal_50.jpg";
+
+
+
 
 // import Ballon_23 from './Decorations/bal_23.png';
 // import Ballon_24 from './Decorations/bal_24.png';
@@ -75,12 +92,28 @@ const exportArray = [
   { obj: Deco_34, title: "Decoration_34" },
   { obj: Deco_35, title: "Decoration_35" },
   { obj: Deco_36, title: "Decoration_36" },
+  { obj: Deco_37, title: "Decoration_37" },
+  { obj: Deco_38, title: "Decoration_38" },
+  { obj: Deco_39, title: "Decoration_39" },
+  { obj: Deco_40, title: "Decoration_40" },
+  { obj: Deco_41, title: "Decoration_41" },
+  { obj: Deco_42, title: "Decoration_42" },
+  { obj: Deco_43, title: "Decoration_43" },
+  { obj: Deco_44, title: "Decoration_44" },
+  { obj: Deco_45, title: "Decoration_45" },
+  { obj: Deco_46, title: "Decoration_46" },
+  { obj: Deco_47, title: "Decoration_47" },
+  { obj: Deco_48, title: "Decoration_48" },
+  { obj: Deco_49, title: "Decoration_49" },
+  { obj: Deco_50, title: "Decoration_50" },
+
+
 ];
 export function GetPictures() {
   const promise = new Promise((resolve, rejected) => {
     setTimeout(() => {
       resolve(exportArray);
-    }, 3000);
+    }, 2000);
   });
 
   return promise;

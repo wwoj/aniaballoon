@@ -10,6 +10,9 @@ import Deco_9 from "./Decorations/Deco_9.jpg";
 import Deco_10 from "./Decorations/Deco_10.jpg";
 import Deco_11 from "./Decorations/Deco_11.jpg";
 import Deco_12 from "./Decorations/Deco_12.jpg";
+import Deco_13 from "./Decorations/Deco_13.jpg";
+import Deco_14 from "./Decorations/Deco_14.jpg";
+
 
 // import Ballon_23 from './Decorations/bal_23.png';
 // import Ballon_24 from './Decorations/bal_24.png';
@@ -27,12 +30,15 @@ const exportArray = [
   { obj: Deco_10, title: "Decoration_10" },
   { obj: Deco_11, title: "Decoration_11" },
   { obj: Deco_12, title: "Decoration_12" },
+  { obj: Deco_13, title: "Decoration_13" },
+  { obj: Deco_14, title: "Decoration_14" },
+
 ];
 export function GetPictures() {
   const promise = new Promise((resolve, rejected) => {
     setTimeout(() => {
       resolve(exportArray);
-    }, 3000);
+    }, 2000);
   });
 
   return promise;
